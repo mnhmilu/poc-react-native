@@ -3,4 +3,4 @@ react native research project
 
 
 # Steps:
-[Getting Started](https://reactnative.dev/docs/0.62/typescript)
+[Step 1 :Getting Started with Expo](https://reactnative.dev/docs/0.62/typescript)
