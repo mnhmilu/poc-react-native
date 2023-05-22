@@ -36,7 +36,9 @@ react native research project
  
  **signup in expo.dev**
 
-`expo login npm install -g expo-cli expo init MyTSProject` 
+`expo login` 
+`npm install -g expo-cli expo init MyTSProject` 
+ 
  will generate es file 
 
      npm install --global expo-cli eas-cli 
