@@ -1,7 +1,7 @@
 # poc-react-native
 react native research project
 
-react native research project
+
 
 # [](https://github.com/mnhmilu/poc-react-native/edit/main/README.md#steps)
 
@@ -37,7 +37,10 @@ react native research project
  **signup in expo.dev**
 
 `expo login` 
-`npm install -g expo-cli expo init MyTSProject` 
+
+`npm install -g expo-cli` 
+
+`expo init MyTSProject` 
  
  will generate es file 
 
