@@ -56,6 +56,7 @@ for app crash on physical device
 
     npm install @rneui/themed @rneui/base
 
-
+**Jira Link**
+[ticket 1](https://mnhmilu.atlassian.net/browse/PER-46)
 
 
