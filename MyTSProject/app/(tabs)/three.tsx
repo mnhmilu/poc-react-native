@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { View, ScrollView, Text, StyleSheet } from "react-native";
 import { Avatar } from "@rneui/themed";
+import { useRouter } from "expo-router";
+import { MaterialIcons } from '@expo/vector-icons'; 
 
 type AvatarData = {
   image_url: string;
@@ -36,10 +38,11 @@ type AvatarComponentProps = {};
 
 
 const Avatars: React.FunctionComponent<AvatarComponentProps> = () => {
+  const router = useRouter();
   return (
     <>
       <ScrollView>
-        <Text style={styles.subHeader}>Icon Avatars</Text>
+        <Text style={styles.subHeader}>Settings</Text>
         <View
           style={{
             flexDirection: "row",
@@ -50,19 +53,23 @@ const Avatars: React.FunctionComponent<AvatarComponentProps> = () => {
           <Avatar
             size={64}
             rounded
-            icon={{ name: "pencil", type: "font-awesome" }}
+            onPress={() => {
+              router.push("/");
+            }}
+            icon={{ name: "backup", type: "material" }}         
             containerStyle={{ backgroundColor: "#6733b9" }}
           />
+          
           <Avatar
             size={64}
             rounded
-            icon={{ name: "rowing" }}
+            icon={{ name: "restore",type: "material"  }}
             containerStyle={{ backgroundColor: "#00a7f7" }}
           />
           <Avatar
             size={64}
             rounded
-            icon={{ name: "heartbeat", type: "font-awesome" }}
+            icon={{ name: "help", type: "material" }}
             containerStyle={{ backgroundColor: "#eb1561" }}
           />
         </View>
@@ -77,7 +84,7 @@ const Avatars: React.FunctionComponent<AvatarComponentProps> = () => {
             size={64}
             rounded
             icon={{
-              name: "extension",
+              name: "add",
               type: "material",
               color: "#cdde20",
             }}
@@ -90,7 +97,7 @@ const Avatars: React.FunctionComponent<AvatarComponentProps> = () => {
           <Avatar
             size={64}
             rounded
-            icon={{ name: "apartment", type: "material", color: "#009688" }}
+            icon={{ name: "details", type: "material", color: "#009688" }}
             containerStyle={{
               borderColor: "grey",
               borderStyle: "solid",
