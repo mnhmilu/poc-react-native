@@ -1,38 +1,29 @@
-import { StyleSheet } from 'react-native';
-
-import EditScreenInfo from '../../components/EditScreenInfo';
-import { Text, View } from '../../components/Themed';
+import React from 'react';
+import { ScrollView } from 'react-native';
+import { PricingCard, lightColors } from '@rneui/themed';
 import { useRouter } from "expo-router";
-import { Button } from '@rneui/base';
 
-export default function TabOneScreen() {
- const router = useRouter();
+type PricingCardComponentProps = {};
 
-  return (
-    <View style={styles.container}>
-      <Text style={styles.title}>Tab One</Text>
-      <Button title="Hello World!" onPress={() => {
-          router.push("/three");
-        }}/>
-      <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
-      <EditScreenInfo path="app/(tabs)/index.tsx" />
-    </View>
-  );
-}
+const Pricing: React.FunctionComponent<PricingCardComponentProps> = () => {
+const router = useRouter();
+return (
+  <>
+    <ScrollView>
+      <PricingCard
+        onButtonPress={() => {
+          router.push("/modal");
+        }}
+        color={lightColors.primary}
+        title="Total Savings"
+        price="100,00.00 BDT"
+        info={['Total Accouns 11', 'Basic Support', 'All Core Features']}
+        button={{ title: 'Add Transaction', icon: 'add' }}
+      />
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  title: {
-    fontSize: 20,
-    fontWeight: 'bold',
-  },
-  separator: {
-    marginVertical: 30,
-    height: 1,
-    width: '80%',
-  },
-});
+    </ScrollView>
+  </>
+);
+};
+
+export default Pricing;
