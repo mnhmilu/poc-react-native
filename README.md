@@ -3,6 +3,11 @@ react native research project
 
 
 
+
+
+
+
+
 # [](https://github.com/mnhmilu/poc-react-native/edit/main/README.md#steps)
 
 ## Steps:
@@ -17,9 +22,24 @@ react native research project
 
 ### Step 3: Android APK generation
 
- 1. Download Android studio and configure
+ 1. Download Android studio and configure environment
 
 > export ANDROID_HOME=$HOME/Android/Sdk
+
+ nano $HOME/.bashrc
+
+Append below lines
+ 
+```
+export ANDROID_HOME=$HOME/Android/Sdk
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/tools/bin
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+
+```
+ 
+source ~/.bashrc
 
 2. configure emulator
 [Configure Emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
