@@ -8,6 +8,11 @@ react native research project
 
 
 
+
+
+
+
+
 # [](https://github.com/mnhmilu/poc-react-native/edit/main/README.md#steps)
 
 ## Steps:
@@ -41,8 +46,6 @@ export PATH=$PATH:$ANDROID_HOME/platform-tools
  
 source ~/.bashrc
 
-2. configure emulator
-[Configure Emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
 
 > npx expo run:android --variant release
 
