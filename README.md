@@ -63,16 +63,12 @@ To see log:
 
 `expo init MyTSProject`
 
-will generate es file
+> will generate es file
 
-     npm install --global expo-cli eas-cli
-
-     eas build -p android --profile preview
+`npm install --global expo-cli eas-cli` 
 
 `npx expo run`
 
-
-> go to expo.dev web and see the build progress ,when finish press install button and rest of the installation process with QR code
 
 ### Resources:
 
@@ -106,21 +102,15 @@ Getting Started with Expo [Ref](https://reactnative.dev/docs/0.62/typescript)
 
 - build process [Ref](https://dev.to/chinmaymhatre/how-to-generate-apk-using-react-native-expo-kae)
 
-**signup in expo.dev**
+To start expo build process
 
-`expo login`
-
-`npm install -g expo-cli`
-
-`expo init MyTSProject`
-
-will generate es file
-
-     npm install --global expo-cli eas-cli
-
-     eas build -p android --profile preview
+`eas build -p android --profile preview`
 
 > go to expo.dev web and see the build progress ,when finish press install button and rest of the installation process with QR code
+
+or
+
+> download apk from the console apk link
 
 </details>  
 
