@@ -1,6 +1,6 @@
 # poc-react-native
 
-## react native research project
+
 
 # [](https://github.com/mnhmilu/poc-react-native/edit/main/README.md#steps)
 
@@ -29,9 +29,12 @@ export PATH=$PATH:$ANDROID_HOME/platform-tools
 
 ### configure emulator
 
+ 1. Download Android studio and configure
 
    [How to Configure Emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
 
+2. configure emulator
+[Configure Emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
 
 > npx expo run:android --variant release
 
