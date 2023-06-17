@@ -1,41 +1,24 @@
 # poc-react-native
-react native research project
 
-
-
-
-
-
-
-
-
-
-
-
+## react native research project
 
 # [](https://github.com/mnhmilu/poc-react-native/edit/main/README.md#steps)
 
-## Steps:
 
-### Step 1: Getting Started with Expo [Ref](https://reactnative.dev/docs/0.62/typescript)
-> npx expo run
-### Step 2: Add React Native Element
+<details>
+  <summary>Andriod Environment Preparation</summary>
 
-[add react-native element for beautiful UI](https://github.com/react-native-elements/react-native-elements/tree/next)
+  ### Andriod Environment
 
-[Icon Reference](https://icons.expo.fyi/)
+* Download Android studio and configure environment
 
-### Step 3: Android APK generation
 
- 1. Download Android studio and configure environment
-
-> export ANDROID_HOME=$HOME/Android/Sdk
-
- nano $HOME/.bashrc
+> nano $HOME/.bashrc
 
 Append below lines
- 
-```
+
+```shell
+
 export ANDROID_HOME=$HOME/Android/Sdk
 export PATH=$PATH:$ANDROID_HOME/emulator
 export PATH=$PATH:$ANDROID_HOME/tools
@@ -43,37 +26,124 @@ export PATH=$PATH:$ANDROID_HOME/tools/bin
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 
 ```
- 
-source ~/.bashrc
+
+### configure emulator
+
+
+   [How to Configure Emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
 
 
 > npx expo run:android --variant release
 
--- press a to open andriod emulator || r for reload
+or 
 
-``` npx react-native log-android --verbose ```
+-- press a to open andriod emulator || r for reload from regular command
+
+To see log: 
+
+`npx react-native log-android --verbose`
+
 
 > open another tab to see the log if application crash
 
- - build process  [Ref](https://dev.to/chinmaymhatre/how-to-generate-apk-using-react-native-expo-kae)
- 
- **signup in expo.dev**
 
-`expo login` 
 
-`npm install -g expo-cli` 
+</details>
 
-`expo init MyTSProject` 
- 
- will generate es file 
+---
+<details>
+  <summary>Expo Environment Preparation</summary>
 
-     npm install --global expo-cli eas-cli 
 
-     eas build -p android --profile preview
+**signup in expo.dev**
 
->go to expo.dev web and see the build progress ,when finish press install button and rest of the installation process with QR code
+`expo login`
 
- **Troubleshoot**
+`npm install -g expo-cli`
+
+`expo init MyTSProject`
+
+> will generate es file
+
+`npm install --global expo-cli eas-cli` 
+
+`npx expo run`
+
+
+### Resources:
+
+Getting Started with Expo [Ref](https://reactnative.dev/docs/0.62/typescript)
+
+
+</details>  
+
+---
+
+<details>
+  <summary>Add React Native Element for beautificaiton</summary>
+
+
+[add react-native element for beautiful UI](https://github.com/react-native-elements/react-native-elements/tree/next)
+
+
+[Icon Reference](https://icons.expo.fyi/)
+
+
+</details>
+
+
+---
+
+
+
+<details>
+  <summary>Andriod APK generation using Expo CI/CD</summary>
+
+
+- build process [Ref](https://dev.to/chinmaymhatre/how-to-generate-apk-using-react-native-expo-kae)
+
+To start expo build process
+
+`eas build -p android --profile preview`
+
+> go to expo.dev web and see the build progress ,when finish press install button and rest of the installation process with QR code
+
+or
+
+> download apk from the console apk link
+
+</details>  
+
+---
+
+<details>
+  <summary>SQLite Support</summary>
+  
+  ### Resources
+  
+> https://www.youtube.com/watch?v=1kSLd9oQX7c&t=15s
+
+> https://github.com/chelseafarley/expo-sqlite-tutorial/blob/main/App.js
+
+Note: sqlite don't run on web , use emulator or expo go mobile app to view the change
+
+### Prerequisite
+
+```js
+// expo add expo-sqlite
+// expo add expo-file-system
+// expo add expo-document-picker
+// expo add expo-sharing
+// expo add expo-dev-client
+
+```
+
+</details>
+
+
+---
+
+**Troubleshoot**
 
 for app crash on physical device
 
@@ -81,5 +151,3 @@ for app crash on physical device
 
 **Jira Link**
 [ticket 1](https://mnhmilu.atlassian.net/browse/PER-46)
-
-
