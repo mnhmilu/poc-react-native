@@ -70,6 +70,18 @@ source ~/.bashrc
 
 >go to expo.dev web and see the build progress ,when finish press install button and rest of the installation process with QR code
 
+
+3. SQLite Support
+
+
+https://www.youtube.com/watch?v=1kSLd9oQX7c&t=15s
+
+https://github.com/chelseafarley/expo-sqlite-tutorial/blob/main/App.js
+
+Note: sqlite don't run on web , use emulator or expo go mobile app to view the change
+
+
+
  **Troubleshoot**
 
 for app crash on physical device
