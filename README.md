@@ -161,3 +161,11 @@ for app crash on physical device
 
 **Jira Link**
 [ticket 1](https://mnhmilu.atlassian.net/browse/PER-46)
+
+
+### Buy me a Coffee! 
+
+<img src="https://github.com/mnhmilu/microservice/blob/main/bmc_qr.png"  width="30%" height="30%">
+
+
+
